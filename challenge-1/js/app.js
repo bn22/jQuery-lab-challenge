@@ -22,7 +22,20 @@ $(function() {
 	 		-- Input values are strings, remember to parse it!
 			-- Regex for checking digit input is '^\\d+$'
 			-- Look up how setInterval() works, you will need it.
-	*/		
+	*/
+    var timeInput = $(document.getElementById())
+
+
+    var startTime = Date.now();
+    var interval;
+    $('#countdownButton').click(function() {
+        window.setInterval(function() {
+            var elapsedSeconds = Math.floor((Date.now() - startTime ) / 1000);
+            var digitCheck = new RegExp('^\\d+$');
+        }, 1000);
+    });
+
+
 });
 
 function countDown() {

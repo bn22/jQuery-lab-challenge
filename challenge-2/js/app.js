@@ -36,7 +36,9 @@ function setButtonStyle(selectedButton, buttons) {
 		-- Remember you can pass in a function to fadeIn/fadeOut. Use it to set attributes during transition.
 */
 function moveImageIntoFrame(button) {
-	console.log('here');
+    console.log('here');
+    var image = button.val();
+
 }
 
 
